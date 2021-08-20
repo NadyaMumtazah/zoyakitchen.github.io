@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Style+Script&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+#header {
+    width: 100%;
+    position: fixed;
+    min-height: 8vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+.nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-link {
+    margin: 0px 20px;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    padding-top: 8vh;
+}
+#home h1 {
+    font-family: 'Style Script', cursive;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+#about {
+    text-align: center;
+    width: 30%;
+    margin: 20px auto;
+}
+input {
+    margin: 12px 0px;
+    background-color: gainsboro;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+.btn {
+    color: white;
+    margin-bottom: 70px;
+    width: 30%;
+    background-color: darkcyan;
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+.video {
+    text-align: center;
+}
+.content {
+    font-family: 'Style Script', cursive;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-top: 100px;
+    text-align: center;
+}
+.image {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.image img {
+    width: 400px;
+    height: 300px;
+}
+
+
+
+@media (max-width: 768px) {
+    #home {
+        text-align: center;
+    }
+    #home h1 {
+        font-size: 50px;
+    }
+    #about {
+        width: 80%;
+    }
+    .image {
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+    .image img {
+        width: 100%;
+    }
+}
